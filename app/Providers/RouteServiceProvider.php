@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 
-use Framework\Http\Route as Route;
-use Framework\Http\Application;
 use Framework\Http\RouteServiceProvider as ServiceProvider;
 
 /**
@@ -23,13 +21,13 @@ class RouteServiceProvider extends ServiceProvider
      */
     private $availableInterfaces = [
         'api' => [
-            'enabled' => true,
+            'enabled' => false,
             'prefix' => '/api',
             'request-headers' => [
-                // 'Accept' => 'application/json',
+                'Accept' => 'application/json',
             ],
             'response-headers' => [
-                // 'Content-Type' => 'application/json'
+                'Content-Type' => 'application/json'
             ]
         ],
         'web' => [

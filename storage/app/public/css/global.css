@@ -1,0 +1,492 @@
+@import url(base.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/* Aside */
+
+header {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+aside {
+    width: 300px;
+    border-right: 2px solid var(--color-text);
+    display: flex;
+    flex-direction: column;
+}
+
+aside .container {
+    padding: 50px 40px;
+}
+
+aside nav {
+    margin-top: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    display: block;
+    padding: 0.65em 0;
+    white-space: nowrap;
+}
+
+aside li ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .45s ease;
+}
+
+aside ul li.sub-on > ul {
+    max-height: none;
+}
+
+aside ul li.sub-on > h2 {
+    margin-bottom: 1rem;
+}
+
+aside li > a {
+    padding-left: 1em;
+    font-weight: 400;
+    line-height: 1.25;
+    display: block;
+    font-size: .875em;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: transform .3s ease;
+}
+
+aside li > a:hover, aside li > h2:hover {
+    transform: translate3d(5px,0,0);
+}
+
+aside li.active > a:before {
+    content: "";
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--color-primary);
+    border-radius: 50%
+}
+
+aside li > h2 {
+    display: block;
+    font-size: .875em;
+    font-weight: bold;
+    color: var(--color-text);
+    text-decoration: none;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* Scroll Back To Top Btn */
+
+.scroll-btn {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    color: var(--color-primary);
+    background-color: var(--color-background);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    right: 5%;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.5s, transform 0.5s;
+    z-index: 900;
+}
+
+.scroll-btn.show {
+    opacity: 1;
+    transition: opacity 1s, transform 1s;
+}
+
+
+/* Section */
+
+section {
+    flex: 1;
+}
+
+section .container {
+    padding: 50px 80px;
+}
+
+section h1 {
+    font-size: 2.5em;
+    letter-spacing: 0em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+section h1+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section h1+ul li {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+section h1+ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+section h1+ul li ul {
+    margin-top: 0.5em;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+section h1+ul li ul li {
+    padding-left: 1.5em;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+section h1+ul li ul li a {
+    font-weight: normal;
+}
+
+section h1+ul a:before {
+    content: "> ";
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--color-primary);
+    transition: all .25s ease-in-out;
+}
+
+section h1+ul a:hover:before {
+    transform:rotate(90deg);
+}
+
+section h2 {
+    font-size: 1.75em;
+    letter-spacing: 0;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+}
+
+section h3 {
+    font-size: 1.25em;
+    letter-spacing: 0;
+    font-weight: normal;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+section h4 {
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section h2 a, section h3 a, section h4 a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+section h2 a:before, section h3 a:before, section h4 a:before {
+    content: "> ";
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--color-primary);
+    transition: all .25s ease-in-out;
+}
+
+section p {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+    color: var(--color-text-muted);
+}
+
+section p strong {
+    font-weight: bold;
+}
+
+section p code, section table td code {
+    background-color: #242327;
+    color: var(--color-primary);
+    padding: 0.125rem 0.25rem;
+}
+
+section p a {
+    /* text-decoration: none; */
+    color: var(--color-primary);
+}
+
+section .code-snippet {
+    margin-bottom: 2.4rem;
+}
+
+section .code-snippet pre {
+    overflow-x: auto;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.078);
+    position: relative;
+    white-space: normal;
+}
+
+section .code-snippet pre code {
+    display: block;
+    background-color: #242327;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section .code-snippet pre code .line {
+    padding: 2px;
+}
+
+section .code-snippet pre code .line span {
+    color: #BFC7D5;
+}
+
+section blockquote {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+}
+
+section blockquote .icon {
+    width: 75px;
+    height: 75px;
+    background:#242327;
+    flex: 1 0 auto;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section blockquote .icon:before {
+    content: '!';
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: var(--color-primary);
+}
+
+section blockquote p {
+    margin-bottom: 0;
+}
+
+section .content-list ul {
+    margin: 0 0 24px;
+    padding-inline-start: 20px;
+}
+
+section .content-list code {
+    background-color: #242327;
+    color: var(--color-primary);
+    padding: 0.125rem 0.25rem;
+}
+
+section .content-list ul li a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+section .code-snippet pre code .indent {
+    margin-left: 20px;
+}
+
+section .code-snippet pre code .line span.class {
+    color: #1cc780;
+}
+
+section .code-snippet pre code .line span.variable {
+    color: #82AAFF;
+}
+
+section .code-snippet pre code .line span.function {
+    color: #DCCD79;
+}
+
+section .code-snippet pre code .line span.punctuation {
+    color: #ffffff;
+}
+
+section .code-snippet pre code .line span.text {
+    color: #CE9178;
+}
+
+section .code-snippet pre code .line span.parentheses, section .code-snippet pre code .line span.keyword {
+    color: #C792EA;
+}
+
+section .code-snippet pre code .line span.comment {
+    color: #697098;
+}
+
+section table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+}
+
+section table th {
+    font-size: 1.6rem;
+    border: 1px solid #d7d7dc;
+    padding: 10px;
+    text-align: left;
+}
+
+section table td {
+    color: var(--color-text-muted);
+    border: 1px solid #d7d7dc;
+    padding: 10px;
+    text-align: left;
+}
+
+section table td a {
+    color: var(--color-primary);
+}
+
+section .list p {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1023px) {
+    main {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    header .logo {
+        color: var(--color-text);
+        text-decoration: none;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding: 0px 10px;
+    }
+
+    aside {
+        margin-top: 75px;
+        width: 100%;
+        background: var(--color-background);
+        position: absolute;
+        z-index: 1000;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    aside .container {
+        padding: 20px 80px;
+    }
+
+    aside nav {
+        margin-top: 0;
+    }
+
+    aside .logo {
+        display: none;
+    }
+
+    aside.hide-menu {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section .container {
+        padding: 20px 80px;
+    }
+
+    section .content-table {
+        overflow-x: auto;
+    }
+
+    button.toggle-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+        outline: none;
+        background: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    button.toggle-menu span {
+        color: var(--color-primary);
+    }
+}
+
+@media screen and (max-width: 599px) {
+    aside .container, section .container {
+        padding: 20px 30px;
+    }
+
+    section blockquote {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section code {
+        word-break: break-word;
+    }
+}
