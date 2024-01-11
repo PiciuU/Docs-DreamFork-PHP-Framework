@@ -259,6 +259,7 @@ section p code, section table td code {
 
 section p a {
     /* text-decoration: none; */
+    word-break: break-word;
     color: var(--color-primary);
 }
 
@@ -488,5 +489,9 @@ section .list p {
 
     section code {
         word-break: break-word;
+    }
+
+    section .list p {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

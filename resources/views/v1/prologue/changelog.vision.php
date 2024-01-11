@@ -38,7 +38,7 @@
                         <blockquote>
                             <div class="icon"></div>
                             <p>
-                            The current version of Dreamfork framework is <code>1.0.0</code>, and it was officially released on <code>January 1, 2024</code>.
+                            The current version of Dreamfork framework is <code>1.0.1</code>, and it was officially released on <code>January 11, 2024</code>.
                             </p>
                         </blockquote>
                         <h2 id="version-1.0.x">
@@ -47,6 +47,15 @@
                         <h3 id="patch-1.0.1">
                             <a href="#patch-1.0.1">Patch 1.0.1</a>
                         </h3>
+                        <p>
+                            This patch was released on January 11, 2024.
+                        </p>
+                        <p>
+                            In this small update we've addressed minor bugs, improved the framework's functionality, and enhanced compatibility with Linux-based systems. All changes in this update are backward-compatible with Version 1.0.0, meaning there's no need for any specific adjustments in your project to implement this update. These modifications exclusively impact core framework files. To update framework files in your projects to Version 1.0.1, you need to download the modified files from the following <a href="https://github.com/PiciuU/DreamFork-PHP-Framework/pull/21/commits">pull request</a>.
+                        </p>
+                        <p>
+                            For a detailed list of changes, please refer to <a href="https://github.com/PiciuU/DreamFork-PHP-Framework/pull/21">PR description</a>.
+                        </p>
                     </div>
                 </section>
             </main>

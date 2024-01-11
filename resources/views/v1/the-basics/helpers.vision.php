@@ -87,6 +87,7 @@
                         <div class="list">
                             <p>
                                 <a href="#method-app">app</a>
+                                <a href="#method-absolute-path">absolute_path</a>
                                 <a href="#method-class-basename">class_basename</a>
                                 <a href="#method-collect">collect</a>
                                 <a href="#method-config">config</a>
@@ -199,6 +200,21 @@
                         <p>
                             The <code>app</code> function returns the <a href="/docs/1.x/container">service container</a> instance.
                         </p>
+                        <h4 id="method-absolute-path">
+                            <a href="#method-absolute-path">absolute_path()</a>
+                        </h4>
+                        <p>
+                            The <code>absolute_path</code> function converts a given path to its absolute form:
+                        </p>
+                        <div class="code-snippet">
+                            <pre>
+                                <code>
+                                    <div class="line">
+                                        <span>echo absolute_path(storage_path("public/someFile.png")); // /home/www/example/storage/public/someFile.png</span>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
                         <h4 id="method-class-basename">
                             <a href="#method-class-basename">class_basename()</a>
                         </h4>

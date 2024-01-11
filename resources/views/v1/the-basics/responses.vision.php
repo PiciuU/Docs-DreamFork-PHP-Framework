@@ -143,7 +143,7 @@
                             <a href="#other-response-types">Other Response Types</a>
                         </h2>
                         <p>
-                            The <code>response</code> helper can be employed to generate various types of response instances. When the <code>response</code> helper is called without arguments, it returns an implementation of the Framework\Http\Routing\ResponseFactory class. This class provides several helpful methods for generating responses.
+                            The <code>response</code> helper can be employed to generate various types of response instances. When the <code>response</code> helper is called without arguments, it returns an implementation of the <code>Framework\Http\Routing\ResponseFactory</code> class. This class provides several helpful methods for generating responses.
                         </p>
                         <h3 id="no-content-responses">
                             <a href="#no-content-responses">No Content Responses</a>

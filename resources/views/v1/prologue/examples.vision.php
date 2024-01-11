@@ -17,6 +17,9 @@
                             <li>
                                 <a href="#dreamfork-documentation-website">Dreamfork Documentation Website</a>
                             </li>
+                            <li>
+                                <a href="#bargify-app">Bargify App</a>
+                            </li>
                         </ul>
                         <h2 id="introduction">
                             <a href="#introduction">Introduction</a>
@@ -32,6 +35,18 @@
                         </p>
                         <p>
                             Project Repository: <a href="https://github.com/PiciuU/Docs-Dreamfork-PHP-Framework">https://github.com/PiciuU/Docs-Dreamfork-PHP-Framework</a>
+                        </p>
+                        <h2 id="bargify-app">
+                            <a href="#bargify-app">Bargify App</a>
+                        </h2>
+                        <p>
+                           Bargify is an application that empowers users to create watchlists, allowing them to monitor the status of products from selected online stores. By adding products to the watchlist, users can stay informed about price drops or product availability. The application utilizes Vue.js on the frontend and leverages Dreamfork as the backend API framework. The source code of the application is publicly accessible, serving as a showcase of Dreamfork's usage as a backend API.
+                        </p>
+                        <p>
+                            Live Version: <a href="https://dev.dream-speak.pl/bargify/">https://dev.dream-speak.pl/bargify</a>
+                        </p>
+                        <p>
+                            Project Repository: <a href="https://github.com/PiciuU/Bargify-DreamFork-App">https://github.com/PiciuU/Bargify-DreamFork-App</a>
                         </p>
                     </div>
                 </section>

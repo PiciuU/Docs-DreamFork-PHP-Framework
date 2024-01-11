@@ -9,7 +9,7 @@
         <meta name="author" content="DreamSpeak">
         <meta name="robots" content="index, follow">
 
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 
         <title>Dreamfork - The PHP Framework</title>
 

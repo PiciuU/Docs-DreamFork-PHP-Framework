@@ -1,6 +1,6 @@
 <header>
     <a href="{{ app('url')->to('/') }}" class="logo">
-        <img src="{{app('url')->to('/') }}/assets/logo.svg"/>
+        <img src="{{app('url')->to('/') }}/assets/logo.svg" alt="Dreamfork Logo - Symbolizing Innovation and Creativity"/>
         <span>Dreamfork</span>
     </a>
     <button class="toggle-menu">
@@ -13,7 +13,7 @@
 <aside class="hide-menu">
     <div class="container">
         <a href="{{ app('url')->to('/') }}" class="logo">
-            <img src="{{app('url')->to('/') }}/assets/logo.svg"/>
+            <img src="{{app('url')->to('/') }}/assets/logo.svg" alt="Dreamfork Logo - Symbolizing Innovation and Creativity"/>
             <span>Dreamfork</span>
         </a>
         <nav>

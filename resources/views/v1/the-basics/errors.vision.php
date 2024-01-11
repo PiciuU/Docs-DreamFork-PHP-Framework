@@ -131,6 +131,57 @@
                                 </code>
                             </pre>
                         </div>
+                        <h4 id="hiding-exceptions">
+                            <a href="#hiding-exceptions">Hiding Exceptions</a>
+                        </h4>
+                        <p>
+                            Handler also offers the ability to hide exception details when the application is not in debug mode. By default, details related to database handling exceptions are hidden. However, you can customize this behavior by extending the list of exceptions to be hidden. To achieve this, assign an array of specific exceptions to the <code>$dontFlash</code> variable.
+                        </p>
+                        <div class="code-snippet">
+                            <pre>
+                                <code>
+                                    <div class="line">
+                                        <span>// App\Exceptions\Handler.php</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>&nbsp;</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>protected $dontFlash = [</span>
+                                    </div>
+                                    <div class="line indent">
+                                        <span>Framework\Exceptions\Database\QueryExecutionError::class</span>
+                                    </div>
+                                    <div class="line indent">
+                                        <span>App\Exceptions\MyError::class</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>];</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>&nbsp;</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>public function register(\Throwable $e): void</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>{</span>
+                                    </div>
+                                    <div class="line indent">
+                                        <span>$this->reportable($e);</span>
+                                    </div>
+                                    <div class="line">
+                                        <span>}</span>
+                                    </div>
+                                </code>
+                            </pre>
+                        </div>
+                        <blockquote>
+                            <div class="icon"></div>
+                            <p>
+                                When customizing the <code>$dontFlash</code> array, include <code>QueryExecutionError</code>, as shown above, to maintain default database exception handling. Omitting this will impact database-related exceptions.
+                            </p>
+                        </blockquote>
                         <h4 id="global-log-context">
                             <a href="#global-log-context">Global Log Context</a>
                         </h4>
