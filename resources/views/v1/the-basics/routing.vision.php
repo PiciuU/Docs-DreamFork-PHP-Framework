@@ -53,6 +53,9 @@
                             <li>
                                 <a href="#fallback-routes">Fallback Routes</a>
                             </li>
+                            <li>
+                                <a href="#cors">Cross-Origin Resource Sharing (CORS)</a>
+                            </li>
                         </ul>
                         <h2 id="basic-routing">
                             <a href="#basic-routing">Basic Routing</a>
@@ -470,6 +473,21 @@
                             <div class="icon"></div>
                             <p>
                                 It's important to note that the fallback route should always be the last route registered by your application.
+                            </p>
+                        </blockquote>
+                        <h2 id="cors">
+                            <a href="#cors">Cross-Origin Resource Sharing (CORS)</a>
+                        </h2>
+                        <p>
+                            Dreamfork can automatically respond to CORS <code>OPTIONS</code> HTTP requests with default configured values. The <code>OPTIONS</code> requests are handled seamlessly by the <code>HandleCors</code> middleware.
+                        </p>
+                        <p>
+                            If you need to modify the CORS configuration to suit your specific requirements, you can do so in the <code>config/cors.php</code> file. This configuration file contains detailed descriptions of all available options, allowing you to customize the CORS settings according to your needs.
+                        </p>
+                        <blockquote>
+                            <div class="icon"></div>
+                            <p>
+                                For more information about CORS, please check the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_response_headers" target="_blank">MDN web documentation on CORS</a>.
                             </p>
                         </blockquote>
                     </div>

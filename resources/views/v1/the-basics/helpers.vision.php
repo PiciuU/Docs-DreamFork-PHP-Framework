@@ -309,13 +309,13 @@
                             <a href="#method-validator">validator()</a>
                         </h4>
                         <p>
-                            The <code>validator</code> function creates a new <a href="/docs/1.x/validator">validator</a> instance with the given arguments. You may use it as an alternative to the <code>Validator</code> facade.
+                            The <code>validator</code> function creates a new <a href="/docs/1.x/validation">validator</a> instance with the given arguments. You may use it as an alternative to the <code>Validator</code> facade.
                         </p>
                         <h4 id="method-view">
                             <a href="#method-view">view()</a>
                         </h4>
                         <p>
-                            The <code>view</code> function retrieves a <a href="/docs/1.x/view">view</a> instance.
+                            The <code>view</code> function retrieves a <a href="/docs/1.x/views">view</a> instance.
                         </p>
                         <h2 id="other-utilities">
                             <a href="#other-utilities">Other Utilities</a>

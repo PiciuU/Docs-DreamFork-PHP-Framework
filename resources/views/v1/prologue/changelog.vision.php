@@ -18,6 +18,9 @@
                                 <a href="#version-1.0.x">Version 1.0.x</a>
                                 <ul>
                                     <li>
+                                        <a href="#patch-1.0.2">Patch 1.0.2</a>
+                                    </li>
+                                    <li>
                                         <a href="#patch-1.0.1">Patch 1.0.1</a>
                                     </li>
                                 </ul>
@@ -38,12 +41,24 @@
                         <blockquote>
                             <div class="icon"></div>
                             <p>
-                            The current version of Dreamfork framework is <code>1.0.1</code>, and it was officially released on <code>January 11, 2024</code>.
+                            The current version of Dreamfork framework is <code>1.0.2</code>, and it was officially released on <code>July 27, 2024</code>.
                             </p>
                         </blockquote>
                         <h2 id="version-1.0.x">
                             <a href="#version-1.0.x">Version 1.0.x</a>
                         </h2>
+                        <h3 id="patch-1.0.2">
+                            <a href="#patch-1.0.2">Patch 1.0.2</a>
+                        </h3>
+                        <p>
+                            This patch was released on July 27, 2024.
+                        </p>
+                        <p>
+                        In this update, we have implemented comprehensive handling for Cross-Origin Resource Sharing (CORS) similar to Laravel's approach. This enhancement aims to improve security and compatibility for cross-origin interactions within our framework. All changes in this update are backward-compatible with Version 1.0.0, meaning there's no need for any specific adjustments in your project to implement this update. These modifications exclusively impact core framework files. To update framework files in your projects to Version 1.0.2, you need to download the modified files from the following <a href="https://github.com/PiciuU/DreamFork-PHP-Framework/pull/22/commits">pull request</a>.
+                        </p>
+                        <p>
+                            For a detailed list of changes, please refer to <a href="https://github.com/PiciuU/DreamFork-PHP-Framework/pull/22">PR description</a>.
+                        </p>
                         <h3 id="patch-1.0.1">
                             <a href="#patch-1.0.1">Patch 1.0.1</a>
                         </h3>

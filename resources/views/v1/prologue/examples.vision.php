@@ -20,6 +20,9 @@
                             <li>
                                 <a href="#bargify-app">Bargify App</a>
                             </li>
+                            <li>
+                                <a href="#pokecrew-website">PokeCrew Website</a>
+                            </li>
                         </ul>
                         <h2 id="introduction">
                             <a href="#introduction">Introduction</a>
@@ -47,6 +50,18 @@
                         </p>
                         <p>
                             Project Repository: <a href="https://github.com/PiciuU/Bargify-DreamFork-App">https://github.com/PiciuU/Bargify-DreamFork-App</a>
+                        </p>
+                        <h2 id="pokecrew-website">
+                            <a href="#pokecrew-website">PokeCrew Website</a>
+                        </h2>
+                        <p>
+                            PokeCrew is a website developed for the PokeCrew group, designed to facilitate the easy sharing of group photos taken with the crew. The frontend is built using VueJS, leveraging a library to transform the Single Page Application (SPA) into a Server-Side Rendered (SSR) application, optimizing website loading times. Dreamfork is used as the backend of the application, providing an API for the site's functionalities.
+                        </p>
+                        <p>
+                            Live Version: <a href="https://pokecrew.pl">https://pokecrew.pl</a>
+                        </p>
+                        <p>
+                            Project Repository: <a href="https://github.com/PiciuU/PokeCrew-App">https://github.com/PiciuU/PokeCrew-App</a>
                         </p>
                     </div>
                 </section>

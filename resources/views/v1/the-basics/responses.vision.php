@@ -85,7 +85,7 @@
                         <blockquote>
                             <div class="icon"></div>
                             <p>
-                                You can also return <a href="/docs/1.x/orm-collections">ORM collections</a> from your routes or controllers, and they will be automatically converted to JSON.
+                                You can also return <a href="/docs/1.x/orm">ORM collections</a> from your routes or controllers, and they will be automatically converted to JSON.
                             </p>
                         </blockquote>
                         <h3 id="response-objects">
